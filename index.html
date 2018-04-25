@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>serviceWorker测试用例</title>
+	<script>
+		var iScale = 1;
+		iScale = iScale / window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,user-scalable=no,' + 'initial-scale=' + iScale + ',minimum-scale=' + iScale + ',maximum-scale=' + iScale + '">');
+	</script>
+</head>
+<body>
+	<script>
+		if ('serviceWorker' in navigator) {
+			document.write('支持serviceWorker');
+		}
+	</script>
+</body>
+</html>
